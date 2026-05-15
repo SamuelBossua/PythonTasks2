@@ -1,0 +1,111 @@
+Deitel Python Chapter 4 Solutions
+
+4.1
+
+If there is no else clause, and none of the if/elif conditions are true, nothing happens.
+
+4.2
+
+If you keep pushing onto a stack without popping, the memory keeps filling until overflow.
+
+4.3
+
+def cube(x):
+    return x ** 3
+
+print('The cube of 2 is', cube(2))
+
+
+4.4
+
+The function adds the squares of each item in the list.
+The answer should be 55.
+
+4.5
+
+def seconds_since_midnight(hour, minute, second):
+    hour_in_seconds = hour * 3600
+    minute_in_seconds = minute * 60
+    return hour_in_seconds + minute_in_seconds + second
+
+
+4.6
+
+def average(first, *args):
+    total = first + sum(args)
+    return total / (1 + len(args))
+
+4.7
+
+import datetime
+
+def date_and_time():
+    print(datetime.datetime.today()) 
+
+4.8
+
+number = 13.56449
+print(round(number))
+print(round(number, 1))
+print(round(number, 2))
+print(round(number, 3))
+
+
+4.9
+
+def fahrenheit(celsius):
+    return (9 / 5) * celsius + 32
+
+for celsius in range(101):
+    print(f"{celsius}	{fahrenheit(celsius):.1f}")
+
+
+4.10
+
+Guess-the-number game using random.randint(1,1000), user guesses until correct with high/low hints.
+
+4.11
+
+Same as 4.10 but count guesses; <=10 = lucky/good, >10 = do better.
+
+4.12
+
+Tortoise and Hare simulation using random movement rules until one reaches 70.
+
+4.13
+
+def product(*numbers):
+    result = 1
+    for number in numbers:
+        result *= number;
+    return result;
+
+
+4.14
+
+Multiplication practice program generating two random one-digit numbers and repeating until correct.
+
+4.15
+
+Same as 4.14 but use random encouraging/error responses.
+
+4.16
+
+Same as 4.15 but add difficulty levels (1-digit or 2-digit).
+
+4.17
+
+Add arithmetic type selection: addition, subtraction, multiplication, division, mixed.
+
+4.18
+
+Internal iteration is preferred because you focus on what should happen, not manual looping details.
+
+4.19
+
+“What” programming is cleaner, shorter, and easier because built-in abstractions handle the implementation.
+
+4.20
+
+Population variance uses n because it includes the whole population.
+Sample variance uses n-1 because it estimates from a sample and reduces bias.
